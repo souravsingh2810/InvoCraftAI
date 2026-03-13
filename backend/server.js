@@ -16,6 +16,7 @@ app.use(cors({
     "http://localhost:5173",
     "https://invo-craft-ai.vercel.app"
   ],
+  credentials: true
 }));
 // app.use(cors());
 app.use(clerkMiddleware())
