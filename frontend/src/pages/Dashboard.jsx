@@ -251,7 +251,7 @@ const Dashboard = () => {
     try {
       const token = await obtainToken();
       if (!token) return;
-      const res = await fetch(`${API_BASE}/api/businessprofile/me`, {
+      const res = await fetch(`${API_BASE}/api/businessProfile/me`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
