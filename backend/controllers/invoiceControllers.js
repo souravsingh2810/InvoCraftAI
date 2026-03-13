@@ -4,7 +4,7 @@ import {getAuth } from "@clerk/express";
 // import { uploadedFilesToUrls, generateUniqueInvoiceNumber } from "../../../invoice copy/Invoice/backend/controllers/invoiceController.js";
 import path from 'path';
 
-const API_BASE = 'http://localhost:4000'
+const API_BASE = 'https://invocraftai.onrender.com'
 
 function computeTotals(items=[], taxPercent=0){
     const safe = Array.isArray(items)? items.filter(Boolean): [];
