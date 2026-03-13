@@ -4,7 +4,10 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";
 import KpiCard from "../components/KpiCard";
 import StatusBadge from "../components/StatusBadge";
+// const API_BASE = "http://localhost:4000";
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:4000";
+
+
 // const API_BASE =
 //   window.location.hostname === "localhost"
 //     ? "http://localhost:4000"
@@ -251,7 +254,7 @@ const Dashboard = () => {
     try {
       const token = await obtainToken();
       if (!token) return;
-      const res = await fetch(`${API_BASE}/api/businessProfile/me`, {
+      const res = await fetch(`${API_BASE}/api/businessprofile/me`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
