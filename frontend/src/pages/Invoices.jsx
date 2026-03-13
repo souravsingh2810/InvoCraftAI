@@ -5,7 +5,11 @@ import GeminiIcon from "../components/GeminiIcon";
 import { useNavigate } from "react-router-dom";
 import { invoicesStyles } from "../assets/dummyStyles";
 import { useAuth } from "@clerk/clerk-react";
+
+// const API_BASE = "http://localhost:4000";
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:4000";
+
+
 
 /* ---------- helpers ---------- */
 /* ----------------- frontend-only: normalize image URLs ----------------- */
